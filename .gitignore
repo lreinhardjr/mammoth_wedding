@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Local tooling / editor config (machine-specific paths)
+.claude/
+
+# Large source art & originals — kept out of git to stay lean.
+# The optimized web versions the site actually uses live in site/assets/.
+Kyle_*.JPEG
+ChatGPT*.png
+Mammoth Wedding Week.html

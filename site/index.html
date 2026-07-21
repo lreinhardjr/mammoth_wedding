@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L &amp; K · Wedding Week at Mammoth Lakes</title>
+<meta name="description" content="One mountain town, one week, one wedding. L + K, Mammoth Lakes, California — August 1–8, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Ovo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- fixed atmosphere layers -->
+<div class="sky-wash" aria-hidden="true"></div>
+<div class="paper-grain" aria-hidden="true"></div>
+
+<!-- elevation ticker -->
+<div class="elev-badge" id="elevBadge" aria-hidden="true">
+  <svg class="elev-ticks" viewBox="0 0 18 44">
+    <line x1="4" y1="2"  x2="14" y2="2"  class="tick"/>
+    <line x1="4" y1="12" x2="11" y2="12" class="tick"/>
+    <line x1="4" y1="22" x2="14" y2="22" class="tick"/>
+    <line x1="4" y1="32" x2="11" y2="32" class="tick"/>
+    <line x1="4" y1="42" x2="14" y2="42" class="tick"/>
+    <circle id="elevDot" cx="9" cy="42" r="3"/>
+  </svg>
+  <div class="elev-text">
+    <span class="elev-label">Elev.</span>
+    <span class="elev-num" id="elevNum">0′</span>
+  </div>
+</div>
+
+<!-- the stream — desktop margin thread -->
+<svg class="stream" id="stream" viewBox="0 0 60 4000" preserveAspectRatio="none" aria-hidden="true">
+  <path id="streamPath" d="M30,0
+    C 22,120 40,240 28,360 C 16,480 44,600 30,720
+    C 18,840 42,960 26,1080 C 12,1200 46,1320 30,1440
+    C 20,1560 40,1680 28,1800 C 16,1920 44,2040 30,2160
+    C 18,2280 42,2400 26,2520 C 14,2640 46,2760 30,2880
+    C 20,3000 40,3120 28,3240 C 16,3360 44,3480 30,3600
+    C 22,3720 40,3840 30,4000" />
+</svg>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero act" data-sky="#ffffff" data-elev="7880">
+
+  <!-- watercolor Minarets — the real painting; blooms up on scroll (main.js --hp) -->
+  <div class="hero-scene" aria-hidden="true">
+    <div class="hr-photo">
+      <img src="assets/paintings/hero-range.jpg"
+           srcset="assets/paintings/hero-range-sm.jpg 1100w, assets/paintings/hero-range.jpg 1672w"
+           sizes="100vw" width="1672" height="941" alt="" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+
+  <div class="hero-copy">
+    <p class="kicker">A week in the Eastern Sierra</p>
+    <h1 class="monogram"><span class="mono-l">L</span><span class="mono-amp">&amp;</span><span class="mono-k">K</span></h1>
+    <p class="hero-sub">Wedding week at Mammoth Lakes, California</p>
+    <p class="hero-meta">Aug 1 – 8, 2026 <span class="dot">•</span> Elev. 7,880′</p>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span>begin the climb</span><svg viewBox="0 0 24 24"><path d="M12 4 v14 M6 13 l6 6 6-6"/></svg></div>
+</header>
+
+<!-- ═══════════ INTRO ═══════════ -->
+<section class="intro act" data-sky="#ffffff" data-elev="7880">
+  <p class="lede reveal">One mountain town, one week, one wedding — and no schedule you have to keep. Everything below is an <em>invitation</em>, not an itinerary. Wander off, sleep in, do your own thing.</p>
+  <div class="basecamps">
+    <a class="camp-card reveal" href="https://www.google.com/maps/search/?api=1&amp;query=2018+Lodestar+Dr,+Mammoth+Lakes,+CA+93546" target="_blank" rel="noopener">
+      <span class="camp-kicker">Basecamp · Gilson VRBO</span>
+      <span class="camp-addr">2018 Lodestar Dr, Mammoth Lakes, CA 93546</span>
+    </a>
+    <a class="camp-card reveal" href="https://www.google.com/maps/search/?api=1&amp;query=91+Pinehurst+Dr,+Mammoth+Lakes,+CA+93546" target="_blank" rel="noopener">
+      <span class="camp-kicker">Basecamp · Snow House</span>
+      <span class="camp-addr">91 Pinehurst Dr, Mammoth Lakes, CA 93546</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════ THE WEEK ═══════════ -->
+<main id="week">
+
+  <!-- Day 1 · sea level · no painting — the quiet start -->
+  <section class="act day day-plain" id="day1" data-sky="#f2f5f0" data-elev="0">
+    <div class="day-head reveal">
+      <p class="day-date">Saturday · Aug 1</p>
+      <h2 class="day-title">Touch down in San&nbsp;Francisco</h2>
+      <div class="rule-line"></div>
+      <p class="day-note">sea level · the week begins low</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="tl-when">Morning</span><h3>Gilsons fly into SFO</h3><p>We'll pick you up! Settle in and shake off the flight.</p></li>
+      <li class="reveal"><span class="tl-when">Midday</span><h3>Tunnel Top Park</h3><p>Golden Gate views and room for the kids to run.</p></li>
+      <li class="reveal"><span class="tl-when">Evening</span><h3>Provision &amp; pack</h3><p>Groceries ordered, bags staged — mountains tomorrow.</p></li>
+    </ol>
+  </section>
+
+  <!-- Day 2 · the drive east · Kyle_2 (river valley) -->
+  <section class="act day day-scene" id="day2" data-sky="#c3dde6" data-elev="9943" data-painting="2">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.18">
+        <img src="assets/paintings/kyle-2.jpg" srcset="assets/paintings/kyle-2-sm.jpg 760w, assets/paintings/kyle-2.jpg 1400w" sizes="100vw" alt="Watercolor: a couple stands on a rock above a winding alpine river, mountains beyond" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="day-date">Sunday · Aug 2</p>
+        <h2 class="day-title">Over the pass to Mammoth</h2>
+        <div class="rule-line"></div>
+        <p class="day-note">cresting Tioga Pass · 9,943′</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Morning</span><h3>Pick up cars, head east</h3><p>~6 hrs via Yosemite's Tioga Pass — one of the great American drives.</p></li>
+        <li class="reveal"><span class="tl-when">En route</span><h3>Scenic stops &amp; stretch breaks</h3><p>Tenaya Lake beach (toddler heaven), Tuolumne Meadows, Lembert Dome (walk as far as feels good — the full summit is a steep bare-rock finish for the ambitious, kid-free crew), and Mono Lake's otherworldly South Tufa.</p></li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Arrive at the house</h3><p>Keys, bunks, and a slow first night at 8,000 feet.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 3 · up the mountain · Kyle_3 (Lakes Basin, Crystal Crag) -->
+  <section class="act day day-scene alt" id="day3" data-sky="#aed4e4" data-elev="11053" data-painting="3">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.18">
+        <img src="assets/paintings/kyle-3.jpg" srcset="assets/paintings/kyle-3-sm.jpg 760w, assets/paintings/kyle-3.jpg 1400w" sizes="100vw" alt="Watercolor: a couple beneath a tall pine looks across a lake to Crystal Crag" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="day-date">Monday · Aug 3</p>
+        <h2 class="day-title">Up the mountain</h2>
+        <div class="rule-line"></div>
+        <p class="day-note">Panorama Gondola · 11,053′</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Midday</span><h3>Kevin &amp; Allie arrive from Reno</h3><p>Join whatever's happening.</p></li>
+        <li class="reveal"><span class="tl-when">Afternoon</span><h3>Summit gondola &amp; adventure park</h3><p>Ride the Panorama Gondola to 11,000+ feet for a 360° Sierra view — or stay low at the Adventure Center for mini golf, the playground, the climbing wall, ropes course, mountain biking, and other kid-sized fun at the base.</p></li>
+        <!-- TODO: swap the href for the AllTrails link L will provide for the sunset stroll -->
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Sunset stroll</h3><p>An easy golden-hour walk to catch the light. <a href="https://www.alltrails.com/us/california/mammoth-lakes" target="_blank" rel="noopener">Trail on AllTrails</a> · <span class="aside">route TBD.</span></p></li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Pizza &amp; game night at the house</h3><p>Back to the house to refuel and play.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 4 · lake day · Kyle_5 (Convict Lake) -->
+  <section class="act day day-scene" id="day4" data-sky="#97c6dd" data-elev="7850" data-painting="5">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.18">
+        <img src="assets/paintings/kyle-5.jpg" srcset="assets/paintings/kyle-5-sm.jpg 760w, assets/paintings/kyle-5.jpg 1400w" sizes="100vw" alt="Watercolor: kneeling with a dog at the shore of Convict Lake beneath Laurel Mountain" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="day-date">Tuesday · Aug 4</p>
+        <h2 class="day-title">Lake day &amp; hot springs</h2>
+        <div class="rule-line"></div>
+        <p class="day-note">Convict Lake · 7,850′</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Morning</span><h3>Choose your morning</h3><p>Pick one — or mix and match at your own pace.</p>
+          <!-- TODO: swap the meadow-walk href for the AllTrails link L will provide -->
+          <ul class="opts">
+            <li><a href="https://www.mammothmountain.com/things-to-do/activities/via-ferrata" target="_blank" rel="noopener">Via Ferrata</a> — climb a cliff face clipped to steel cables and iron rungs, helmet and harness supplied. Guided routes from easy to airy, with a suspension bridge in the middle. <span class="opt-note">Placeholder — book ahead if you want in.</span></li>
+            <li><a href="https://www.alltrails.com/us/california/mammoth-lakes" target="_blank" rel="noopener">Meadow walk in the basin</a> — flat, easy, and gorgeous if you'd rather keep it mellow. <span class="opt-note">Placeholder description.</span></li>
+            <li>Optional hikes — Panorama Dome for 360° Sierra views · Crystal Lake, a moderate climb to an alpine lake below a dramatic crag · Mammoth Rock Trail for sweeping valley views.</li>
+          </ul>
+        </li>
+        <li class="reveal"><span class="tl-when">Midday</span><h3>Boat day at Convict Lake</h3><p>Private pontoon on a glassy alpine lake ringed by 12,000-foot peaks. Lunch on the water. <span class="aside">Life vests for all sizes at the marina.</span></p></li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Reinhards arrive</h3><p>Join whatever's happening.</p></li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Wild hot springs soak</h3><p>Steaming pools in an open valley under big desert sky — we'll watch the sunset from the hot tubs.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 5 · private vows · Kyle_1 (couple in the meadow) -->
+  <section class="act day day-scene alt" id="day5" data-sky="#bcdae6" data-elev="8000" data-painting="1">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.18">
+        <img src="assets/paintings/kyle-1.jpg" srcset="assets/paintings/kyle-1-sm.jpg 760w, assets/paintings/kyle-1.jpg 1400w" sizes="100vw" alt="Watercolor: a couple holds hands in a mountain meadow, gazing toward jagged Sierra peaks" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="day-date">Wednesday · Aug 5</p>
+        <h2 class="day-title">L + K private vows · choose your adventure</h2>
+        <div class="rule-line"></div>
+        <p class="day-note">somewhere in the pines · 8,000′</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Morning</span><h3>We slip away to say our vows</h3><p>Just the two of us, somewhere in the pines.</p></li>
+        <li class="reveal"><span class="tl-when">All day</span><h3>You: pick your pleasure</h3><p>However you like to spend a mountain day:</p>
+          <!-- TODO: swap the Lakes Basin / nature-walk hrefs for the AllTrails links L will provide -->
+          <ul class="opts">
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sierra+Star+Golf+Course+Mammoth+Lakes+CA" target="_blank" rel="noopener">Golf at Sierra Star</a> — California's highest course at 8,000 ft.</li>
+            <li><a href="https://www.alltrails.com/us/california/mammoth-lakes" target="_blank" rel="noopener">E-bike the Lakes Basin path</a> — a gentle paved cruise past the lakes.</li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Village+at+Mammoth+Mammoth+Lakes+CA" target="_blank" rel="noopener">Wander Mammoth Village</a> — coffee, shops, and people-watching.</li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Convict+Lake+Mammoth+Lakes+CA" target="_blank" rel="noopener">Fishing on Convict or Lake Mary</a> — cast a line on glassy water.</li>
+            <li><a href="https://www.alltrails.com/us/california/mammoth-lakes" target="_blank" rel="noopener">Easy nature walks around the Lakes Basin</a> — Lake Mary, Lake Mamie, Twin Lakes, or Lake George all have gentle shoreline paths.</li>
+          </ul>
+        </li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>Mammoth Brewery dinner, all together</h3><p>L + K join back in once they're back from their private vow adventure.</p></li>
+        <li class="reveal"><span class="tl-when">Night</span><h3>Sauna &amp; cold plunge at the Snow House</h3><p>For the brave — a chance to unwind before the big day.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 6 · THE WEDDING · Kyle_4 (family at the summit signpost) — the crest -->
+  <section class="act day day-scene climax" id="day6" data-sky="#7fbbd9" data-elev="9265" data-painting="4">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.10">
+        <img src="assets/paintings/kyle-4.jpg" srcset="assets/paintings/kyle-4-sm.jpg 760w, assets/paintings/kyle-4.jpg 1400w" sizes="100vw" alt="Watercolor: a family of four stands at the Mammoth Mountain summit signpost before the Minarets" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="main-event">The main event</p>
+        <p class="day-date">Thursday · Aug 6</p>
+        <h2 class="day-title">The wedding</h2>
+        <div class="rule-line rule-line-wide"></div>
+        <p class="day-note">Minaret Vista · 9,265′ · the crest of the week</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Late AM</span><h3>Family brunch hike</h3><p>Short, gentle, gorgeous.</p></li>
+        <li class="reveal"><span class="tl-when">Afternoon</span><h3>Get ready</h3><p>At the basecamps — take your time, steam your wedding looks.</p></li>
+        <li class="reveal"><span class="tl-when">Afternoon</span><h3>Hair &amp; makeup</h3><p>The girls get glammed up. <span class="aside">Details &amp; timing TBD.</span></p></li>
+        <li class="reveal tl-star"><span class="tl-when">6:00 PM</span><h3>Ceremony at Minaret Vista</h3><p>Shuttles will pick us all up — time TBD.</p></li>
+        <li class="reveal tl-star"><span class="tl-when">7:00 PM</span><h3>Wedding dinner at The Brasserie</h3><p>Prix fixe menu — TBD.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 7 · waterfalls · Kyle_6 (Rainbow Falls) -->
+  <section class="act day day-scene" id="day7" data-sky="#a9d2e0" data-elev="7600" data-painting="6">
+    <figure class="scene">
+      <div class="scene-img bloom" data-parallax="0.18">
+        <img src="assets/paintings/kyle-6.jpg" srcset="assets/paintings/kyle-6-sm.jpg 760w, assets/paintings/kyle-6.jpg 1400w" sizes="100vw" alt="Watercolor: a couple sits on the rocks below Rainbow Falls, a rainbow in the mist" loading="lazy">
+      </div>
+      <div class="bloom-veil" aria-hidden="true"></div>
+    </figure>
+    <div class="day-card">
+      <div class="day-head reveal">
+        <p class="day-date">Friday · Aug 7</p>
+        <h2 class="day-title">Lake lounging &amp; a special dinner</h2>
+        <div class="rule-line"></div>
+        <p class="day-note">Horseshoe Lake · our last full day</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-when">Midday</span><h3>Beach day at Horseshoe Lake</h3><p>Sandy shoreline, shallow entry.</p></li>
+        <li class="reveal"><span class="tl-when">Evening</span><h3>A special dinner at the Snow House</h3><p>Our last night all together — gather at the Snow House.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Day 8 · home · no painting — the gentle descent -->
+  <section class="act day day-plain" id="day8" data-sky="#f2f5f0" data-elev="0">
+    <div class="day-head reveal">
+      <p class="day-date">Saturday · Aug 8</p>
+      <h2 class="day-title">Homeward bound, hearts&nbsp;full</h2>
+      <div class="rule-line"></div>
+      <p class="day-note">back to sea level</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="tl-when">Morning</span><h3>Slow breakfast, pack up</h3></li>
+      <li class="reveal"><span class="tl-when">Midday</span><h3>Everyone heads home</h3><p>Back over the pass to SFO, down the 395 to Southern California, or out through Reno airport — stop wherever calls to you.</p></li>
+    </ol>
+  </section>
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="act footer" data-sky="#ffffff" data-elev="7880">
+  <p class="footer-mark reveal" aria-hidden="true">L <span>&amp;</span> K</p>
+  <p class="footer-line reveal">See you in the mountains.</p>
+  <p class="footer-meta reveal">L + K · Mammoth Lakes · August 2026</p>
+</footer>
+
+<!-- ═══════════ DAY NAVIGATION (right rail) ═══════════ -->
+<nav class="daynav min" id="daynav" aria-label="Jump to a day of the week">
+  <button class="daynav-toggle" id="daynavToggle" type="button" aria-expanded="false">
+    <span class="dnt-day" id="daynavToggleDay">The week</span>
+    <span class="dnt-icon" aria-hidden="true"></span>
+  </button>
+  <div class="daynav-body">
+    <p class="dn-head">August 2026</p>
+    <div class="dn-track">
+      <span class="dn-rail" aria-hidden="true"></span>
+      <span class="dn-fill" id="dnFill" aria-hidden="true"></span>
+      <ul class="daynav-list">
+        <li class="dn-item" data-target="day1"><a href="#day1"><span class="dn-label"><span class="dn-wd">Sat</span> Aug 1</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day2"><a href="#day2"><span class="dn-label"><span class="dn-wd">Sun</span> Aug 2</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day3"><a href="#day3"><span class="dn-label"><span class="dn-wd">Mon</span> Aug 3</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day4"><a href="#day4"><span class="dn-label"><span class="dn-wd">Tue</span> Aug 4</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day5"><a href="#day5"><span class="dn-label"><span class="dn-wd">Wed</span> Aug 5</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item wed" data-target="day6"><a href="#day6"><span class="dn-label"><span class="dn-wd">Thu</span> Aug 6 <span class="dn-wed-tag">Wedding!</span></span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day7"><a href="#day7"><span class="dn-label"><span class="dn-wd">Fri</span> Aug 7</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item" data-target="day8"><a href="#day8"><span class="dn-label"><span class="dn-wd">Sat</span> Aug 8</span><span class="dn-dot"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
