@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trails &amp; hikes · L &amp; K Wedding Week</title>
+<meta name="description" content="Seven favorite hikes around Mammoth Lakes for L + K wedding week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Ovo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css?v=17">
+<link rel="stylesheet" href="css/sub.css?v=17">
+</head>
+<body>
+<div class="paper-grain" aria-hidden="true"></div>
+
+<!-- side navigation (shared white-veil overlay) -->
+<nav class="daynav min" id="daynav" aria-label="Site navigation">
+  <button class="daynav-toggle" id="daynavToggle" type="button" aria-expanded="false" aria-label="Open navigation">
+    <svg class="dnt-glyph" viewBox="0 0 26 15" aria-hidden="true"><path d="M1.5 13.5 L8.5 4 L12.5 9 L17 1.5 L24.5 13.5"/></svg>
+    <span class="dnt-day">Menu</span>
+  </button>
+  <div class="daynav-body" aria-hidden="true">
+    <div class="dn-inner">
+      <p class="dn-head">August 2026</p>
+      <ul class="daynav-list">
+        <li class="dn-item"><a href="index.html#day1"><span class="dn-label"><span class="dn-wd">Sat</span> Aug 1</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day2"><span class="dn-label"><span class="dn-wd">Sun</span> Aug 2</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day3"><span class="dn-label"><span class="dn-wd">Mon</span> Aug 3</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day4"><span class="dn-label"><span class="dn-wd">Tue</span> Aug 4</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day5"><span class="dn-label"><span class="dn-wd">Wed</span> Aug 5</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item wed"><a href="index.html#day6"><span class="dn-label"><span class="dn-wed-tag">Wedding!</span> <span class="dn-wd">Thu</span> Aug 6</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day7"><span class="dn-label"><span class="dn-wd">Fri</span> Aug 7</span><span class="dn-dot"></span></a></li>
+        <li class="dn-item"><a href="index.html#day8"><span class="dn-label"><span class="dn-wd">Sat</span> Aug 8</span><span class="dn-dot"></span></a></li>
+      </ul>
+      <p class="dn-head dn-head-2">Field guides</p>
+      <ul class="dn-guides">
+        <li><a class="dn-current" href="hikes.html">Trails &amp; hikes</a></li>
+        <li><a href="rides.html">E-bike rides</a></li>
+        <li><a href="roadtrip.html">The drive from Reno</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="sub-hero">
+  <a class="back-link" href="index.html">Back to the week</a>
+  <div class="sub-hero-art" aria-hidden="true">
+    <img src="assets/paintings/hk-duckpass.jpg" srcset="assets/paintings/hk-duckpass-sm.jpg 760w, assets/paintings/hk-duckpass.jpg 1600w" sizes="100vw" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <div class="sub-hero-copy"><div class="sub-hero-box">
+    <p class="sub-kicker">Boots on · wedding week</p>
+    <h1 class="sub-title"><span class="w" style="animation-delay:0.15s">Trails</span> <span class="w" style="animation-delay:0.29s">&amp;</span> <span class="w" style="animation-delay:0.43s">hikes</span></h1>
+    <p class="sub-lede">Every hike we love around Mammoth — from flat river strolls to Larry’s favorite grind up to Duck Pass. All optional, all gorgeous.</p>
+  </div></div>
+</header>
+
+<main class="sub-main">
+
+<section class="sub-section">
+  <div class="util-head reveal">
+    <p class="kicker">Pick your effort</p>
+    <h2 class="util-title">The trails</h2>
+    <p class="util-lede">Filter by how much climbing you feel like doing. Stats are from AllTrails — and check the recent reviews there for current trail conditions before you head out.</p>
+  </div>
+<div class="hike-filters reveal" role="group" aria-label="Filter hikes by difficulty">
+    <button class="hf-chip is-on" data-filter="all" type="button">All <span class="hf-count">7</span></button>
+    <button class="hf-chip" data-filter="easy" type="button">Easy <span class="hf-count">4</span></button>
+    <button class="hf-chip" data-filter="moderate" type="button">Moderate <span class="hf-count">2</span></button>
+    <button class="hf-chip" data-filter="hard" type="button">Hard <span class="hf-count">1</span></button>
+  </div>
+
+  <div class="hike-grid" id="hikeGrid">
+
+    <article class="hike-card reveal" data-level="easy">
+      <button class="hike-photo" type="button" data-full="assets/hikes/owens-river-full.jpg" data-caption="Owens River · easy riverside stroll">
+        <img src="assets/hikes/owens-river.jpg" alt="The Owens River winding through the valley beneath the Sierra" loading="lazy" decoding="async">
+        <span class="hike-badge easy">Easy</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">Owens River</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">2.3 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">32 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">0.5–1 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 3.9 · Out &amp; back</p>
+        <p class="hike-desc">A flat ramble along a slow, glassy river winding through golden high-desert meadow, with the whole snow-streaked Sierra crest standing up on the horizon. Go as far as you feel like and turn around whenever — the view barely changes and never gets old.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/owens-river--2" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="easy">
+      <button class="hike-photo" type="button" data-full="assets/hikes/hidden-lake-full.jpg" data-caption="Hidden Lake &amp; Sherwin Trail · Lake Mary and the Sherwin Range">
+        <img src="assets/hikes/hidden-lake.jpg" alt="Lake Mary below the Sherwin Range" loading="lazy" decoding="async">
+        <span class="hike-badge easy">Easy</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">Hidden Lake &amp; Sherwin Trail</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">1.3 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">95 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">0.5–1 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 4.6 · Loop</p>
+        <p class="hike-desc">An easy stroll beneath the Sherwin cliffs — sage and golden meadow grass, pine shade, and a quiet little lake glittering at the end. <span class="aside">Our backup meadow walk if we don't get to it earlier in the week.</span></p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/hidden-lake-and-sherwin-trail" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="easy">
+      <button class="hike-photo" type="button" data-full="assets/hikes/mcleod-lake-full.jpg" data-caption="McLeod Lake · the Mammoth Lakes Basin">
+        <img src="assets/hikes/mcleod-lake.jpg" alt="Alpine lakes in the Mammoth Lakes Basin" loading="lazy" decoding="async">
+        <span class="hike-badge easy">Easy</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">McLeod Lake</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">1.8 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">347 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">0.5–1 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 4.8 · Loop</p>
+        <p class="hike-desc">A short, shaded climb from the Horseshoe Lake trailhead to a still green pool ringed in lodgepole pine, with the pale granite wall of Mammoth Crest rising straight out of the far shore. The best scenery-per-step in the basin.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/mcleod-lake-trail" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="easy">
+      <button class="hike-photo" type="button" data-full="assets/hikes/tj-lake-full.jpg" data-caption="TJ Lake &amp; Lake Barrett · from Lake George">
+        <img src="assets/hikes/tj-lake.jpg" alt="Lake George in the Mammoth Lakes Basin" loading="lazy" decoding="async">
+        <span class="hike-badge easy">Easy</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">TJ Lake &amp; Lake Barrett</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">1.6 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">318 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">0.5–1 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 4.8 · Out &amp; back</p>
+        <p class="hike-desc">A gentle wander up from Lake George to two pocket lakes cupped beneath the spire of Crystal Crag — clear green water, granite slabs to sit on, and short enough for the littlest legs.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/lake-barrett-and-tj-lake-via-george-lake-loop" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="moderate">
+      <button class="hike-photo" type="button" data-full="assets/hikes/crystal-lake-full.jpg" data-caption="Crystal Lake · above the Lakes Basin">
+        <img src="assets/hikes/crystal-lake.jpg" alt="The Mammoth Lakes Basin seen from above" loading="lazy" decoding="async">
+        <span class="hike-badge moderate">Moderate</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">Crystal Lake</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">~3.4 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">~790 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">~2 hr</span></li>
+        </ul>
+        <p class="hike-meta">Out &amp; back · stats approximate</p>
+        <p class="hike-desc">A quick, steep run of switchbacks that suddenly opens on the whole Lakes Basin glinting below — then Crystal Lake itself, held in a bowl of rock beneath the crag. One of the most popular climbs in the area, and it earns it.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/crystal-lake-trail" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="moderate">
+      <button class="hike-photo" type="button" data-full="assets/hikes/long-lake-full.jpg" data-caption="Long Lake · Little Lakes Valley">
+        <img src="assets/hikes/long-lake.jpg" alt="Long Lake in Little Lakes Valley ringed by high peaks" loading="lazy" decoding="async">
+        <span class="hike-badge moderate">Moderate</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">Long Lake · Little Lakes Valley</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">4.1 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">524 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">1.5–2 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 4.9 · Out &amp; back</p>
+        <p class="hike-desc">Turquoise lake after turquoise lake strung down a wildflower valley ringed by 13,000-foot peaks. Enormous alpine scenery for a remarkably mellow grade — the trail barely climbs the whole way in.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/long-lake-via-little-lakes-valley-trail--2" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+    <article class="hike-card reveal" data-level="hard">
+      <button class="hike-photo" type="button" data-full="assets/hikes/duck-lake-full.jpg" data-caption="Duck Lake · high on the Sierra crest">
+        <img src="assets/hikes/duck-lake.jpg" alt="Duck Lake, a large alpine lake high in the Sierra" loading="lazy" decoding="async">
+        <span class="hike-badge hard">Hard</span>
+      </button>
+      <div class="hike-body">
+        <h3 class="hike-name">Duck Pass &amp; Pika Lake</h3>
+        <ul class="hike-stats">
+          <li><span class="hs-k">Length</span><span class="hs-v">10.4 mi</span></li>
+          <li><span class="hs-k">Gain</span><span class="hs-v">2,155 ft</span></li>
+          <li><span class="hs-k">Time</span><span class="hs-v">5.5–6 hr</span></li>
+        </ul>
+        <p class="hike-meta">★ 4.9 · Out &amp; back</p>
+        <p class="hike-desc">Larry's favorite, and the big one — a steady climb past Arrowhead, Skelton, and Barney Lakes up to the pass, where Duck Lake spreads out impossibly blue against bare granite and sky. Start early and bring layers.</p>
+        <a class="hike-link" href="https://www.alltrails.com/trail/us/california/duck-lake-trail--2" target="_blank" rel="noopener">View on AllTrails</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="wc-band reveal"><img src="assets/paintings/hk-owens.jpg" srcset="assets/paintings/hk-owens-sm.jpg 760w, assets/paintings/hk-owens.jpg 1500w" sizes="100vw" alt="Watercolor: the Owens River winding toward the snowy Sierra" loading="lazy"><span class="band-caption">the Owens River, looking west</span></div>
+
+</main>
+
+<nav class="sub-next" aria-label="More guides">
+  <div class="tease-grid">
+    <a class="tease-card reveal" href="index.html">
+      <img src="assets/paintings/hero-range-sm.jpg" alt="" loading="lazy">
+      <span class="tease-body"><span class="tease-title">Back to the week</span><span class="tease-sub">The full day-by-day itinerary</span><span class="tease-cta">Open</span></span>
+    </a>
+    <a class="tease-card reveal" href="rides.html">
+      <img src="assets/paintings/hk-alpine-sm.jpg" alt="" loading="lazy">
+      <span class="tease-body"><span class="tease-title">E-bike rides</span><span class="tease-sub">Four rides from the Snow House door</span><span class="tease-cta">Open</span></span>
+    </a>
+    <a class="tease-card reveal" href="roadtrip.html">
+      <img src="assets/paintings/rt-june-sm.jpg" alt="" loading="lazy">
+      <span class="tease-body"><span class="tease-title">The drive from Reno</span><span class="tease-sub">Two legs, sixteen stops, zero hurry</span><span class="tease-cta">Open</span></span>
+    </a>
+  </div>
+</nav>
+
+<footer class="act footer">
+  <p class="footer-mark" aria-hidden="true">L <span>&amp;</span> K</p>
+  <p class="footer-line">See you in the mountains.</p>
+  <p class="footer-meta">L + K · Mammoth Lakes · August 2026</p>
+</footer>
+
+<!-- lightbox for hike photos -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close photo">&times;</button>
+  <figure class="lb-figure">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+<script src="js/sub.js?v=17" defer></script>
+</body>
+</html>

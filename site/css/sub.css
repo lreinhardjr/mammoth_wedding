@@ -1,0 +1,191 @@
+/* ══════════════════════════════════════════════════════════
+   L & K · sub-pages (hikes, rides, road trip)
+   Same watercolor language as the landing page — misty paintings
+   that sharpen as you move, dissolve-in titles — but arranged as
+   full-bleed painting bands with editorial left-aligned heads.
+   ══════════════════════════════════════════════════════════ */
+
+/* ── hero ── */
+.sub-hero {
+  position: relative;
+  min-height: 82svh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #edf3f7 55%, #ffffff 100%);
+}
+.sub-hero-art {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, #000 0, #000 74%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0, #000 74%, transparent 100%);
+}
+.sub-hero-art img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 38%;
+  display: block;
+  transform: scale(calc(1.03 + (1 - var(--hp, 0)) * .05)) translateY(calc((1 - var(--hp, 0)) * 22px));
+  opacity: calc(.62 + var(--hp, 0) * .38);
+  filter: saturate(calc(.7 + var(--hp, 0) * .3)) blur(calc((1 - var(--hp, 0)) * 1.1px));
+  transform-origin: center 70%;
+  will-change: transform, opacity, filter;
+  transition: transform .2s linear, opacity .2s linear, filter .2s linear;
+}
+.sub-hero-copy {
+  position: relative; z-index: 2;
+  width: min(1060px, 100%);
+  margin: 0 auto;
+  padding: 11vh 6vw 10vh;
+}
+.sub-hero-box {
+  position: relative;
+  display: inline-block;
+  padding: 46px 74px 50px;
+  margin: -20px 0 0 -74px;
+}
+/* the white panel — a solid heart that dissolves outward on every
+   side; closest-side keeps the fade inside the box, so there is
+   never a hard corner or edge */
+.sub-hero-box::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse closest-side at 50% 50%,
+    rgba(255,255,255,.95) 40%,
+    rgba(255,255,255,.82) 62%,
+    rgba(255,255,255,.45) 84%,
+    rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+.sub-hero-box > * { position: relative; }
+.sub-kicker {
+  font-size: 11.5px; letter-spacing: .3em; text-transform: uppercase;
+  font-weight: 700; color: var(--ink-soft);
+  text-shadow: 0 0 6px #fff, 0 0 14px #fff, 0 0 26px #fff;
+}
+.sub-title {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(44px, 8vw, 84px);
+  line-height: 1.04; color: var(--ink);
+  margin: 14px 0 12px;
+  text-shadow: 0 0 10px rgba(255,255,255,.9), 0 0 30px rgba(255,255,255,.75);
+}
+.sub-title .w {
+  display: inline-block;
+  opacity: 0; filter: blur(14px);
+  transform: translateY(14px) scale(1.04);
+  animation: subWordIn 1.25s cubic-bezier(.2,.7,.25,1) forwards;
+}
+@keyframes subWordIn { to { opacity: 1; filter: blur(0); transform: none; } }
+.sub-lede {
+  max-width: 58ch;
+  font-size: 16.5px; line-height: 1.65; color: var(--ink-soft);
+  /* no panel — a soft white halo that follows the letters, same
+     breath as the hero fade */
+  text-shadow:
+    0 0 6px #fff, 0 0 14px #fff, 0 0 26px #fff,
+    0 0 42px rgba(255,255,255,.9);
+  opacity: 0; animation: subFade 1s ease .7s forwards;
+}
+@keyframes subFade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.back-link {
+  position: absolute; top: 20px; left: 20px; z-index: 5;
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--sans); font-size: 11px; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+  background: rgba(255,255,255,.85); backdrop-filter: blur(6px);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 9px 15px;
+  transition: background .25s, color .25s, border-color .25s;
+}
+.back-link::before { content: "←"; }
+.back-link:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* ── content shells ── */
+.sub-main { position: relative; }
+.sub-section {
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  padding: 7vh 6vw;
+}
+.sub-section .util-head { max-width: 640px; margin-bottom: 5vh; }
+
+/* ── full-bleed painting bands between sections ── */
+.wc-band {
+  position: relative;
+  height: clamp(300px, 52vh, 560px);
+  overflow: hidden;
+}
+.wc-band img {
+  width: 100%; height: 116%; object-fit: cover; display: block;
+  transform: translateY(var(--par, 0));
+  will-change: transform;
+}
+.wc-band::before, .wc-band::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 20%;
+  z-index: 1; pointer-events: none;
+}
+.wc-band::before { top: 0;    background: linear-gradient(#ffffff, transparent); }
+.wc-band::after  { bottom: 0; background: linear-gradient(transparent, #ffffff); }
+.wc-band .band-caption {
+  position: absolute; right: 22px; bottom: 18px; z-index: 2;
+  font-family: var(--serif); font-style: italic; font-size: 15px;
+  color: var(--ink-soft);
+  background: rgba(255,255,255,.8); backdrop-filter: blur(4px);
+  padding: 6px 13px; border-radius: 999px;
+}
+
+/* ── rental / info feature card ── */
+.feature-card {
+  display: grid; gap: 24px 40px;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line); border-radius: 20px;
+  padding: 28px 32px;
+  box-shadow: 0 14px 40px -20px rgba(30,43,33,.3);
+  max-width: 860px;
+}
+.feature-card h3 { font-family: var(--serif); font-size: 26px; font-weight: 600; }
+.feature-card p { margin-top: 8px; font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); }
+.price-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.price-tiles .pt {
+  background: var(--paper-deep); border: 1px solid var(--line);
+  border-radius: 12px; padding: 14px 12px; text-align: center;
+}
+.pt-k {
+  display: block; font-size: 9.5px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--sage);
+}
+.pt-v {
+  display: block; margin-top: 4px;
+  font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--ink);
+}
+.pt-note { display: block; margin-top: 2px; font-size: 11px; color: var(--ink-soft); }
+@media (max-width: 720px) {
+  .feature-card { grid-template-columns: 1fr; padding: 22px; }
+}
+
+/* ── route acts (road trip) ── */
+.leg-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+
+/* footer nav between sub pages — same tease cards as the home page */
+.sub-next {
+  display: block;
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  padding: 2vh 6vw 10vh;
+}
+
+/* road-trip stops link out to Google Maps */
+.rs-link { text-decoration: none; }
+.rs-link .rs-name {
+  display: inline-block;
+  border-bottom: 1px solid rgba(30,43,33,.18);
+  transition: color .25s, border-color .25s;
+}
+.rs-link:hover .rs-name { color: var(--link); border-color: var(--link); }
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .sub-title .w, .sub-lede { opacity: 1 !important; animation: none !important; filter: none !important; transform: none !important; }
+  .sub-hero-art img { transform: none !important; opacity: 1 !important; filter: none !important; }
+  .wc-band img { transform: none !important; }
+}
