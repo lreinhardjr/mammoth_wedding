@@ -42,7 +42,8 @@
     var input = gate.querySelector(".gate-input");
     var error = gate.querySelector(".gate-error");
 
-    input.focus();
+    /* focus once the field has finished dissolving in */
+    setTimeout(function () { input.focus(); }, 1800);
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
