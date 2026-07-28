@@ -1030,7 +1030,7 @@ body.no-map .map-explore { display: none; }
   width: 7px; height: 11px; border-radius: 2px;
   pointer-events: none;
   opacity: 0;
-  animation: cfPop 1.5s cubic-bezier(.16,.62,.36,1) forwards;
+  animation: cfPop 3s cubic-bezier(.16,.62,.36,1) forwards;
   animation-delay: var(--cfd, 0s);
 }
 @keyframes cfPop {

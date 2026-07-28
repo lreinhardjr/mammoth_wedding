@@ -206,7 +206,7 @@
         if (i % 5 === 4) c.style.borderRadius = "50%";
         mainEvent.appendChild(c);
       }
-      setTimeout(() => mainEvent.querySelectorAll(".cf").forEach(el => el.remove()), 2400);
+      setTimeout(() => mainEvent.querySelectorAll(".cf").forEach(el => el.remove()), 3400);
     };
     const cio = new IntersectionObserver(entries => {
       for (const e of entries) if (e.isIntersecting) { cio.disconnect(); setTimeout(burst, 350); }
