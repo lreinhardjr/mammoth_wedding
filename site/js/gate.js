@@ -25,8 +25,8 @@
         '<img src="assets/paintings/hero-range.jpg" alt="">' +
       '</div>' +
       '<div class="gate-copy">' +
-        '<p class="gate-kicker">A week in the Eastern Sierra</p>' +
-        '<p class="gate-mark"><span class="mono-l">L</span><span class="mono-amp">&amp;</span><span class="mono-k">K</span></p>' +
+        '<p class="gate-kicker">Mammoth Lakes &middot; August 2026</p>' +
+        '<p class="gate-mark">Welcome</p>' +
         '<p class="gate-note">Enter the password to see the week.</p>' +
         '<form class="gate-form" autocomplete="off">' +
           '<input class="gate-input" type="password" name="lk-pass" ' +
@@ -50,7 +50,7 @@
         localStorage.setItem(KEY, "yes");
         gate.classList.add("open");
         document.documentElement.classList.remove("gated");
-        setTimeout(function () { gate.remove(); }, 700);
+        setTimeout(function () { gate.remove(); }, 950);
       } else {
         error.hidden = false;
         gate.classList.remove("nope");
