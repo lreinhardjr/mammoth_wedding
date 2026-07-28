@@ -152,8 +152,8 @@ body {
 .hero-copy {
   position: relative; z-index: 2;
   display: flex; flex-direction: column; align-items: center;
-  /* sit ~10% above true center so the painting gets more room below */
-  margin-top: -10vh;
+  /* sit ~20% above true center so the painting gets more room below */
+  margin-top: -20vh;
   transform: translateY(calc(var(--hp, 0) * -34px));
   opacity: calc(1 - var(--hp, 0) * .6);
 }
@@ -1010,16 +1010,13 @@ body.no-map .map-explore { display: none; }
 
 @media (max-width: 640px) {
   .daynav-body { width: 100vw; padding-right: 78px; }
-  /* anchored to the bottom corner instead of mid-viewport — the hero
-     copy is vertically centered in its section, so a mid-page pill
-     would collide with it on any short mobile screen */
-  .daynav-toggle { top: auto; bottom: 22px; right: 14px; transform: none; }
-  /* elevation ticker keeps the other corner */
-  .elev-badge { right: auto; left: 14px; }
+  .daynav-toggle { right: 10px; }
   /* the pill dissolves in once you start scrolling, and dissolves
-     away again at the top of the page */
+     away again at the top of the page — no collision with the hero
+     copy because it simply isn't there until you've scrolled past it */
   .daynav.tucked .daynav-toggle {
-    opacity: 0; pointer-events: none; transform: translateY(12px);
+    opacity: 0; pointer-events: none;
+    transform: translateY(-50%) translateX(10px);
   }
   /* raise the Minarets painting so more of it shows on small screens */
   .hero-scene { height: 76%; }
