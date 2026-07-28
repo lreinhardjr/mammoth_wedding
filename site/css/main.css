@@ -986,7 +986,8 @@ body.no-map .map-explore { display: none; }
   border: 1px solid var(--line); border-radius: 999px;
   cursor: pointer; pointer-events: auto;
   box-shadow: 0 6px 22px -10px rgba(30,43,33,.35);
-  transition: background .3s, border-color .3s, box-shadow .3s;
+  transition: background .3s, border-color .3s, box-shadow .3s,
+              opacity .5s ease, transform .5s ease;
 }
 .daynav-toggle:hover { border-color: var(--sage); box-shadow: 0 10px 26px -10px rgba(30,43,33,.45); }
 .dnt-glyph { width: 22px; height: 13px; }
@@ -1011,6 +1012,16 @@ body.no-map .map-explore { display: none; }
      copy is vertically centered in its section, so a mid-page pill
      would collide with it on any short mobile screen */
   .daynav-toggle { top: auto; bottom: 22px; right: 14px; transform: none; }
+  /* elevation ticker keeps the other corner */
+  .elev-badge { right: auto; left: 14px; }
+  /* the pill dissolves in once you start scrolling, and dissolves
+     away again at the top of the page */
+  .daynav.tucked .daynav-toggle {
+    opacity: 0; pointer-events: none; transform: translateY(12px);
+  }
+  /* raise the Minarets painting so more of it shows on small screens */
+  .hero-scene { height: 76%; }
+  .hr-photo img { object-position: center 62%; }
 }
 
 /* ── confetti burst on "The main event" ── */

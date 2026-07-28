@@ -63,6 +63,9 @@
     });
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
     window.addEventListener("scroll", closeNav, { passive: true });
+    const tuck = () => dayNav.classList.toggle("tucked", window.scrollY < window.innerHeight * 0.4);
+    window.addEventListener("scroll", tuck, { passive: true });
+    tuck();
   }
 
   /* difficulty filter (hikes / rides) */

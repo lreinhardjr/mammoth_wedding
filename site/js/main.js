@@ -133,6 +133,9 @@
 
     /* day nav: active/passed day states */
     if (dayNav) {
+      /* mobile: pill hides until you've scrolled a little (CSS scopes
+         the effect to small screens) */
+      dayNav.classList.toggle("tucked", window.scrollY < vh * 0.4);
       const wTop = week.offsetTop, wH = week.offsetHeight;
       const dp = Math.min(1, Math.max(0, (window.scrollY + vh * 0.5 - wTop) / wH));
       if (dnRail && dnFill) dnFill.style.height = (dp * dnRail.getBoundingClientRect().height).toFixed(1) + "px";
