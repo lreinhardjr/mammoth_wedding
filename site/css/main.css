@@ -440,6 +440,8 @@ body {
   border-bottom: 1px solid rgba(43,109,140,.38);
   transition: color .25s, border-color .25s;
 }
+/* unlinked option leads share the linked-title weight, in ink */
+.opts strong { font-weight: 600; color: var(--ink); }
 .opts a:hover:not(.trail-btn) { color: var(--link-strong); border-color: var(--link-strong); }
 .opt-note { font-style: italic; color: var(--sand); }
 .tl-star .tl-when { color: var(--rust); }
